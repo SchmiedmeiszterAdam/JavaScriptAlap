@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Saját név</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="formazas.css" rel="stylesheet" type="text/css"/>
+        <link href="pozicionalas.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+
+        <header>
+            <h1>Fix fejléc, a görgetés ellenére sem mozdul el</h1>
+        </header>
+        <main>
+            <nav> 
+                <h2>Oldalsó navigáció</h2>
+                <ul>
+                    <li><a href="index.html">Kezdőlap</a></li>
+                    <li><a href="index.html">Kezdőlap</a></li>
+                    <li><a href="index.html">Kezdőlap</a></li>
+                    <li><a href="index.html">Kezdőlap</a></li>
+                </ul>
+            </nav>
+            <article>
+                <section>
+                    <form novalidate>
+                        <fieldset>
+                            <legend>Számológép</legend>
+                            <div>
+                                <label for="a">Kérek egy számot!</label>
+                                <input type="text" id="a" name="a" placeholder="a" value=2>
+                            </div>
+                            <div>
+                                <label for="b">Kérek még egy számot!</label>
+                                <input type="text" id="b" name="b" placeholder="b" value=3>
+                            </div>
+                            <div>
+                                <label for="muv">Kérek még egy számot!</label>
+                                <input type="text" id="muv" name="muv" placeholder="+-*/" value="+">
+                            </div>
+                            
+                            <input type="button" id="szamol" value="Számol" onclick="szamolas()">
+                            <button id="zar">x</button>
+                        </fieldset>
+
+
+                    </form >
+                </section>
+                <section>
+                    <p id="szoveg">...</p>
+                </section>
+            </article>
+            <footer><p>Fix lábléc</p></footer>
+        </main>
+        <div id="kerdojel">?</div>
+
+        <script src="szamologep.js" type="text/javascript"></script>
+    </body>
+</html>
